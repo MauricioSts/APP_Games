@@ -10,6 +10,6 @@ class Descontos extends StatefulWidget {
 class _DescontosState extends State<Descontos> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text("descontos"));
+    return Scaffold(body: Text("descontoss"));
   }
 }

@@ -5,7 +5,7 @@ import 'dart:convert';
 Future<List<Game>> pesquisarJogosTopMetacritic() async {
   final response = await http.get(
     Uri.parse(
-      'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15',
+      'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50',
     ),
   );
 
