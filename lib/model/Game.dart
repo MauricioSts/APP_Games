@@ -1,7 +1,7 @@
 class Game {
   String titulo;
   String imagem;
-  int metacritic; // Alterado para INT, pois a nota do Metacritic é numérica
+  int metacritic;
   String linkMetacritic;
 
   Game(this.titulo, this.imagem, this.metacritic, this.linkMetacritic);

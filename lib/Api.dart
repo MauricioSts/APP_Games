@@ -12,13 +12,10 @@ Future<List<Game>> pesquisarJogosTopMetacritic() async {
   if (response.statusCode == 200) {
     List<dynamic> jsonData = json.decode(response.body);
 
-    // Converte os dados para lista de jogos
     List<Game> jogos = jsonData.map((item) => Game.fromJson(item)).toList();
 
-    // Filtrar apenas jogos que tenham nota válida no Metacritic
     jogos = jogos.where((game) => game.metacritic > 0).toList();
 
-    // Ordenar do maior para o menor Metacritic Score
     jogos.sort((a, b) => b.metacritic.compareTo(a.metacritic));
 
     return jogos;
