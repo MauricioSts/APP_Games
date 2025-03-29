@@ -24,7 +24,7 @@ class _DescontosState extends State<Descontos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Top Jogos com desconto")),
+      appBar: AppBar(title: const Text("Jogos com desconto")),
       body: Column(
         children: [
           Slider(
